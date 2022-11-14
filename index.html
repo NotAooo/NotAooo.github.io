@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form Pendaftaran</title>
   <link rel="icon" href="asset/Images/logo-ukdw.png">
+  <link rel="icon" href="asset/Images/logo-ukdw.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <style>
@@ -58,8 +59,7 @@
       <div class="row">
         <!-- logo -->
         <div class="col-3 col-md-1 col-sm-4 col-lg-1 mt-2">
-          <a href="https://www.ukdw.ac.id/wp-content/uploads/2017/10/logo-ukdw.png"></a>
-          <img src="https://www.ukdw.ac.id/wp-content/uploads/2017/10/logo-ukdw.png" alt="logo" width="60" height="80">
+          <img src="asset/images/logo-ukdw.png" alt="logo" width="60" height="80">
         </div>
         <!-- search bar -->
         <div id="title" class="col-4 col-md-11 col-sm-8 col-lg-6">
@@ -456,7 +456,7 @@
                   <p style="font-weight: bold;">D. Data Asal Sekolah</p>
                 </div>
                 <form class="row g-3 needs-validation" novalidate>
-                  <div class="col-md-3">
+                  <div class="col-md-5">
                     <label for="validationCustom01" class="form-label">Nama Sekolah Menengah</label>
                     <input type="text" class="form-control" id="validationCustom01" minlength="4"
                       placeholder="Nama Sekolah" required>
@@ -466,8 +466,6 @@
                     <div class="invalid-feedback">
                       Mohon input data
                     </div>
-                  </div>
-                  <div class="col-5">
                     <label class="form-label has-validation" for="validationCustom09">Jurusan</label>
                     <table>
                       <tr>
@@ -502,14 +500,12 @@
                           </div>
                         </td>
                         <td>
-                          <div class="col-md-10">
+                          <div class="col-md-12">
                             <input type="text" class="form-control" id="input2" placeholder="Lainnya" disabled required>
                           </div>
                         </td>
                       </tr>
                     </table>
-                  </div>
-                  <div class="col-3">
                     <label for="validationCustom07" class="form-label">Tahun Lulus</label>
                     <input type="number" class="form-control" id="validationCustom07" placeholder="Tahun Lulus"
                       required>
@@ -520,142 +516,211 @@
                       Mohon input data
                     </div>
                   </div>
-                  <div class="col-12">
-                    <label for="validationCustom" class="form-label" style="font-weight: bold;">Nilai Rapot</label>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">Mata Pelajaran</th>
-                          <th scope="col">Kelas X (semester 1)</th>
-                          <th scope="col">Kelas X (semester 2)</th>
-                          <th scope="col">Kelas XI (semester 1)</th>
-                          <th scope="col">Kelas XI (semester 2)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="col">Bahasa Inggris</th>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                        </tr>
-                        <tr>
-                          <th scope="col">Matematika</th>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                        </tr>
-                        <tr>
-                          <th scope="col">Fisika (khusus kedokteran)</th>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                        </tr>
-                        <tr>
-                          <th scope="col">Kimia (khusus kedokteran)</th>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                        </tr>
-                        <tr>
-                          <th scope="col">Biologi (khusus kedokteran)</th>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                        </tr>
-                        <tr>
-                          <th scope="col">Nilai Rata-Rata (diisi petugas)</th>
-                          <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label has-validation" style="font-weight: bold;"
-                      for="validationCustom09">Informasi Tentang UKDW Didapatkan Lewat</label>
-                    <table>
-                      <tr>
-                        <td>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="infor" id="other validationCustom09"
-                              value="alumni">
-                            <label class="form-check-label" for="inlineCheckbox1">Almuni UKDW</label>
+                  <div class="col-4 d-flex justify-content-around">
+                    <div class="col-md-12">
+                      <div class="col-md-12">
+                        <p style="font-weight: bold; width: fit-content;">Alamat</p>
+                        <div class="card border-success">
+                          <div class="card-body">
+
+                            <div class="col-md-12">
+                              <label for="validationCustom01" class="form-label">Kelurahan</label>
+                              <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                                placeholder="Kelurahan" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                              <div class="invalid-feedback">
+                                Mohon input data
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="validationCustom01" class="form-label">Kecamatan</label>
+                              <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                                placeholder="Kecamatan" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                              <div class="invalid-feedback">
+                                Mohon input data
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="validationCustom01" class="form-label">Kabupaten/Kodya</label>
+                              <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                                placeholder="Kabupaten/Kodya" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                              <div class="invalid-feedback">
+                                Mohon input data
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="validationCustom01" class="form-label">Provinsi</label>
+                              <input type="text" class="form-control" id="validationCustom01" minlength="4"
+                                placeholder="Provinsi" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                              <div class="invalid-feedback">
+                                Mohon input data
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <label for="validationCustom01" class="form-label">Kode Pos</label>
+                              <input type="number" class="form-control" id="validationCustom01" minlength="4"
+                                placeholder="Kode Pos" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                              <div class="invalid-feedback">
+                                Mohon input data
+                              </div>
+                            </div>
                           </div>
-                        </td>
-                        <td>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="infor" id="other validationCustom09"
-                              value="kerabat">
-                            <label class="form-check-label" for="inlineCheckbox1">Saudara / Kerabat</label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="infor" id="other validationCustom09"
-                              value="Promosi">
-                            <label class="form-check-label" for="inlineCheckbox1">Sekolah (Guru BK) / Tim Promosi UKDW
-                              /Edu Fair</label>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="infor" id="other validationCustom09"
-                              value="Internet">
-                            <label class="form-check-label" for="inlineCheckbox1">Internet / Media Sosial</label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" name="infor" id="other validationCustom09"
-                              value="Radio">
-                            <label class="form-check-label" for="inlineCheckbox1">Radio / Koran</label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" onclick="toggleEnable('input3')"
-                              name="lainnya" id="other validationCustom09" value="Lainnya">
-                            <label class="form-check-label" for="inlineCheckbox1">Gereja (sebutkan Gerejanya)</label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="col-md-10">
-                            <input type="text" class="form-control" id="input3" placeholder="Nama Gereja" disabled
-                              required>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div class="col-12">
-                    <p>Dengan ini saya menyatakan bahwa seluruh data diatas diisi dengan benar adanya <br>Bila
-                      dikemudian hari ternyata ditemukan data yang tidak benar, maka saya bersedia menanggung seluruh
-                      sanksi</p>
-                  </div>
-                  <div style="float: right; bottom: 0; right: 150px; margin-bottom: 35px;">
-                    <input id="search" type="text" placeholder="Kota">
-                    <input id="search" type="date" placeholder="">
-                  </div>
-                  <!-- Tanda Tangan -->
-                  <div style="float: right; bottom: 0; right: 150px; margin-bottom: 35px;">
-                    <span
-                      class="border-bottom border-dark">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
-                    <br>
-                    <p>(Nama Lengkap & Tanda Tangan)</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </form>
               </div>
+              <div class="col-12">
+                <label for="validationCustom" class="form-label" style="font-weight: bold;">Nilai Rapot</label>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Mata Pelajaran</th>
+                      <th scope="col">Kelas X (semester 1)</th>
+                      <th scope="col">Kelas X (semester 2)</th>
+                      <th scope="col">Kelas XI (semester 1)</th>
+                      <th scope="col">Kelas XI (semester 2)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="col">Bahasa Inggris</th>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Matematika</th>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Fisika (khusus kedokteran)</th>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Kimia (khusus kedokteran)</th>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Biologi (khusus kedokteran)</th>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Nilai Rata-Rata (diisi petugas)</th>
+                      <td scope="col"><input type="number" class="form-control" style="width: fit-content;"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-12">
+                <label class="form-label has-validation" style="font-weight: bold;" for="validationCustom09">Informasi
+                  Tentang UKDW Didapatkan Lewat</label>
+                <table>
+                  <tr>
+                    <td>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="infor" id="other validationCustom09"
+                          value="alumni">
+                        <label class="form-check-label" for="inlineCheckbox1">Almuni UKDW</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="infor" id="other validationCustom09"
+                          value="kerabat">
+                        <label class="form-check-label" for="inlineCheckbox1">Saudara / Kerabat</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="infor" id="other validationCustom09"
+                          value="Promosi">
+                        <label class="form-check-label" for="inlineCheckbox1">Sekolah (Guru BK) / Tim Promosi UKDW
+                          /Edu Fair</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="infor" id="other validationCustom09"
+                          value="Internet">
+                        <label class="form-check-label" for="inlineCheckbox1">Internet / Media Sosial</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="infor" id="other validationCustom09"
+                          value="Radio">
+                        <label class="form-check-label" for="inlineCheckbox1">Radio / Koran</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" onclick="toggleEnable('input3')" name="lainnya"
+                          id="other validationCustom09" value="Lainnya">
+                        <label class="form-check-label" for="inlineCheckbox1">Gereja (sebutkan Gerejanya)</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="col-md-10">
+                        <input type="text" class="form-control" id="input3" placeholder="Nama Gereja" disabled required>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-12">
+                <p>Dengan ini saya menyatakan bahwa seluruh data diatas diisi dengan benar adanya <br>Bila
+                  dikemudian hari ternyata ditemukan data yang tidak benar, maka saya bersedia menanggung seluruh
+                  sanksi</p>
+              </div>
+              <a href="https://www.ukdw.ac.id/wp-content/uploads/2017/10/logo-ukdw.png"></a>
+              <div style="float: right; bottom: 0; right: 150px; margin-bottom: 35px;">
+                <input id="search" type="text" placeholder="Kota">
+                <input id="search" type="date" placeholder="">
+              </div>
+              <!-- Tanda Tangan -->
+              <div style="float: right; bottom: 0; right: 150px; margin-bottom: 35px;">
+                <span
+                  class="border-bottom border-dark">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
+                <br>
+                <p>(Nama Lengkap & Tanda Tangan)</p>
+              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <section class="container pt-4">
@@ -966,120 +1031,123 @@
                     <td scope="col">Filsafat Keilahian</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 12.000.000,-</label>
-                    </div>
-                  </td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 12.000.000,-</label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td scope="col" rowspan="2">Arsitektur dan Desain</td>
                     <td scope="col">Arsitektur</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 21.000.000,-</label>
-                    </div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 21.000.000,-</label>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td scope="col">Desain Produk</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 19.000.000,-</label>
-                    </div>
-                  </td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 19.000.000,-</label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td scope="col">Bioteknologi</td>
                     <td scope="col">Biologi</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 19.000.000,-</label>
-                    </div>
-                  </td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 19.000.000,-</label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td scope="col" rowspan="2">Bisnis</td>
                     <td scope="col">Manajemen</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 19.000.000,-</label>
-                    </div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 19.000.000,-</label>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td scope="col">Akuntansi</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 19.000.000,-</label>
-                    </div>
-                  </td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 19.000.000,-</label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td scope="col" rowspan="2">Teknologi Informasi</td>
                     <td scope="col">Informatika</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 21.000.000,-</label>
-                    </div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 21.000.000,-</label>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td scope="col">Sistem Informasi</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 21.000.000,-</label>
-                    </div>
-                  </td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 21.000.000,-</label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td scope="col" rowspan="2">Kependidikan & Humaniora</td>
                     <td scope="col">Pendidikan Bahasa Inggris</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 16.000.000,-</label>
-                    </div>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 16.000.000,-</label>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td scope="col">Studi Humanitas</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 12.000.000,-</label>
-                    </div>
-                  </td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 12.000.000,-</label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <td scope="col">Kedokteran</td>
                     <td scope="col">Kedokteran</td>
                     <td scope="col">
                       <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Rp. 270.000.000,-</label>
-                    </div>
-                  </td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Rp. 270.000.000,-</label>
+                      </div>
+                    </td>
                   </tr>
                   <tr>
-                    <td scope="col" style="font-style: italic; color: red;" >*Khusus Program Studi Pendidikan Dokter <br> wajib menuliskan sumbangan kelipatan Rp.10.000.000,-</td>
+                    <td scope="col" style="font-style: italic; color: red;">*Khusus Program Studi Pendidikan Dokter <br>
+                      wajib menuliskan sumbangan kelipatan Rp.10.000.000,-</td>
                     <td>&ensp;</td>
                     <td scope="col">&ensp;&ensp;&ensp;Rp. .........................</td>
                   </tr>
                 </tbody>
               </table>
               <div class="col-12">
-                <p>Catatan: 
-                <br>
-                Formulir pendaftaran dan kelengkapan berkas pendaftaran yang telah di serahkan sepenuhnya menjadi milik panitia PMB UKDW
+                <p>Catatan:
+                  <br>
+                  Formulir pendaftaran dan kelengkapan berkas pendaftaran yang telah di serahkan sepenuhnya menjadi
+                  milik panitia PMB UKDW
                 </p>
-                <p>Dengan ini saya menyatakan bersedia Menanggung sejumlah biaya apbila anak kami diterima menjadi mahasiswa UKDW</p>
+                <p>Dengan ini saya menyatakan bersedia Menanggung sejumlah biaya apbila anak kami diterima menjadi
+                  mahasiswa UKDW</p>
               </div>
               <div style="float: right; bottom: 0; right: 150px; margin-bottom: 35px;">
                 <div style="float: right; bottom: 0; right: 150px; margin-bottom: 35px;">
@@ -1089,9 +1157,9 @@
                   <p class="pt-4" style="text-justify: auto;">Orang Tua / Wali</p>
                   <br><br><br>
                   <span
-                  class="border-bottom border-dark">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
-                <br>
-                <p>(Nama Lengkap & Tanda Tangan)</p>
+                    class="border-bottom border-dark">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
+                  <br>
+                  <p>(Nama Lengkap & Tanda Tangan)</p>
                 </div>
               </div>
             </div>
